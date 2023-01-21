@@ -1,6 +1,5 @@
 #include "CppUTest/TestHarness.h"
-// #include "mqtt.h"
-
+#include "mqtt.h"
 // #include <stdio.h>
 TEST_GROUP(testeIntegracao)
 {
@@ -16,6 +15,5 @@ TEST_GROUP(testeIntegracao)
 
 TEST(testeIntegracao, campare_string)
 {
-    const char *test = "hello";
-    STRCMP_EQUAL("mqtt", test);
+    STRCMP_EQUAL("mqtt", mqtt_ultil::pyload().c_str());
 }

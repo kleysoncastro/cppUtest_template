@@ -1,3 +1,2 @@
-#add_executable(main main.cpp)
-
-#target_link_libraries(main PRIVATE mqtt_util)
+add_executable(main main.cpp)
+target_link_libraries(main PRIVATE mqtt_util)
